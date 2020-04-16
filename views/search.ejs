@@ -1,0 +1,22 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body class="container">
+    <header></header>
+
+    <main>
+      <div class="jumbotron">
+        <p>You searched for <%= data.searchQuery %></p>
+        <ul>
+          <% data.results.articleTitles.forEach(titleResult => { %>
+          <li><%= titleResult %></li>
+          <% }) %>
+        </ul>
+      </div>
+    </%>
+
+    <footer></footer>
+  </body>
+</html>
